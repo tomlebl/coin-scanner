@@ -6,7 +6,7 @@ const table = document.querySelector('table')
 const button = document.querySelector('.btn')
 
 const getMarketData = async () => {
-  const response = await fetch('https://api.coinlore.com/api/global/')
+  const response = await fetch('https://api.coinlore.net/api/global/')
 
   if (response.status === 200) {
     const marketData = await response.json()
@@ -17,7 +17,7 @@ const getMarketData = async () => {
 }
 
 const getCoins = async () => {
-  const response = await fetch('https://api.coinlore.com/api/tickers/')
+  const response = await fetch('https://api.coinlore.net/api/tickers/')
 
   if (response.status === 200) {
     const coins = await response.json()
